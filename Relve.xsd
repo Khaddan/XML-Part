@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"> 
+<xs:element name="releve" abstract="true"/>
+<xs:element name="dateReleve" abstract="true"/>
+<xs:element name="solde" abstract="true"/>
+<xs:element name="oprtations" abstract="true"/>
+<xs:attributeGroup name="attlist.releve">
+    <xs:attribute name="RIB" use="required" type="xs:NMTOKEN"/>
+</xs:attributeGroup>
+<xs:attributeGroup name="attlist.operations">
+    <xs:attribute name="dateDebut" use="required"/>
+    <xs:attribute name="dateFin" use="required"/>
+</xs:attributeGroup>
+<xs:attributeGroup name="attlist.operation">
+    <xs:attribute name="type" default="CREDIT">
+        <xs:simpleType>
+            <xs:restriction base="xs:token">
+                <xs:enumeration value="DEBIT"/>
+                <xs:enumeration value="CREDIT"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="date" use="required"/>
+    <xs:attribute name="montant" use="required"/>
+    <xs:attribute name="description" use="required"/>
+</xs:attributeGroup>
+</xs:schema>

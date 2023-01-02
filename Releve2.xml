@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE releve SYSTEM "file:/C:/Users/Zakaria%20Khaddan/Desktop/PROJETxml/Relve.dtd">
+<releve RIB="0120010018827678199">
+    <dateReleve>2022-12-03</dateReleve>
+    <solde>14556000</solde>
+    <operations dateDebut="2021-12-16" dateFin="2022-10-04">
+        <operation type="CREDIT" date="2022-01-14" montant="10000" description="Vers Espèce"/>
+        <operation type="DEBIT" date="2022-04-21" montant="4500" description="Virement"/>
+       
+    </operations>
+</releve>
